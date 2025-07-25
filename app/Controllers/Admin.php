@@ -44,7 +44,8 @@ class Admin extends BaseController
             'fecha'     => $this->request->getPost('fecha'),
             'categoria' => $this->request->getPost('categoria'),
             'contenido' => $this->request->getPost('contenido'),
-            'imagen'    => $nombreImagen
+            'imagen'    => $nombreImagen,
+            'calificacion' => $this->request->getPost('calificacion', FILTER_VALIDATE_INT) ?: 0
         ]);
 
         return redirect()->to('/admin');
@@ -87,7 +88,8 @@ class Admin extends BaseController
             'fecha'     => $this->request->getPost('fecha'),
             'categoria' => $this->request->getPost('categoria'),
             'contenido' => $this->request->getPost('contenido'),
-            'imagen'    => $nombreImagen
+            'imagen'    => $nombreImagen,
+            'calificacion' => $this->request->getPost('calificacion', FILTER_VALIDATE_INT) ?: 0
         ]);
 
         return redirect()->to('/admin');

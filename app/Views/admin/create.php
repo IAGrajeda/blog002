@@ -35,6 +35,18 @@
                 <textarea name="contenido" rows="5" class="w-full bg-zinc-800 border border-gray-300 px-4 py-2 rounded"></textarea>
             </div>
 
+            <div>
+                <label class="block font-medium">Calificacion:</label>
+                <select name="Calificacion" class="w-full bg-zinc-800 border border-gray-300 px-4 py-2 rounded">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
             <div class="flex justify-between items-center">
                 <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Guardar</button>
                 <a href="<?= site_url('admin') ?>" class="text-blue-500 hover:underline">← Volver</a>

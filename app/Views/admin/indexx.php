@@ -22,7 +22,9 @@
                             <th class="px-4 py-2 text-left">Título</th>
                             <th class="px-4 py-2 text-left">Fecha</th>
                             <th class="px-4 py-2 text-left">Categoría</th>
+                            <th class="px-4 py-2 text-center">Calificacion</th>
                             <th class="px-4 py-2 text-center">Acciones</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -31,6 +33,7 @@
                                 <td class="px-4 py-2"><?= esc($post['titulo']) ?></td>
                                 <td class="px-4 py-2"><?= esc($post['fecha']) ?></td>
                                 <td class="px-4 py-2"><?= esc($post['categoria']) ?></td>
+                                <td class="px-4 py-2"><?= esc($post['Calificacion']) ?></td>
                                 <td class="px-4 py-2 text-center flex flex-col gap-2 md:flex-row items-center">
                                     <a href="<?= site_url('admin/edit/' . $post['id']) ?>"
                                         class="text-black bg-yellow-500 hover:bg-yellow-800 rounded-xl p-1 w-full md:w-1/3">Editar</a>

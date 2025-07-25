@@ -46,6 +46,19 @@
                     class="w-full bg-zinc-800 border border-gray-300 px-4 py-2 rounded"><?= esc($post['contenido']) ?></textarea>
             </div>
 
+              <div>
+                <label class="block font-medium">Calificacion:</label>
+                <select name="Calificacion"
+                    class="w-full bg-zinc-800 border border-gray-300 px-4 py-2 rounded">
+                    <option value="0" <?= $post['Calificacion'] == 0 ? 'selected' : '' ?>>0</option>
+                    <option value="1" <?= $post['Calificacion'] == 1 ? 'selected' : '' ?>>1</option>
+                    <option value="2" <?= $post['Calificacion'] == 2 ? 'selected' : '' ?>>2</option>
+                    <option value="3" <?= $post['Calificacion'] == 3 ? 'selected' : '' ?>>3</option>
+                    <option value="4" <?= $post['Calificacion'] == 4 ? 'selected' : '' ?>>4</option>
+                    <option value="5" <?= $post['Calificacion'] == 5 ? 'selected' : '' ?>>5</option>
+                </select>
+            </div>
+
             <div class="flex justify-between items-center">
                 <button type="submit"
                     class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Actualizar</button>

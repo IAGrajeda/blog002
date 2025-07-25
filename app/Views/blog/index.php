@@ -33,6 +33,11 @@
                         echo mb_strlen($content) > 100 ? esc(mb_substr($content, 0, 100)) . '...' : esc($content);
                         ?>
                     </p>
+                    <?php if (!empty($post['Calificacion'])): ?>
+                        <p class="text-sm text-gray-500 mb-4">Calificación: <?= esc($post['Calificacion']) ?></p>
+                    <?php endif; ?>
+                    
+                    
                     <a href="#" class="text-blue-600 hover:underline">Leer más</a>
                 </div>
             <?php endforeach; ?>
