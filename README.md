@@ -1,25 +1,63 @@
-# Instrucciones para contribuir a este repositorio
+# Mini Blog en CodeIgniter 4
 
----
+Este proyecto es un blog básico desarrollado con **CodeIgniter 4**, que permite gestionar publicaciones desde un panel de administración.
 
-## :white_check_mark: ¿Cómo subir tu proyecto aquí?
+## 🧩 Tecnologías usadas
 
-### 1. Haz un Fork de este repositorio
+- PHP 8+
+- CodeIgniter 4
+- Tailwind CSS
+- MySQL (o SQLite)
+- Git + GitHub
 
-Haz clic en el botón **[Fork]** en la parte superior derecha de esta página.  
-Esto creará una copia del repositorio en tu cuenta de GitHub.
+## 📂 Estructura
 
----
+- `/app/Controllers/Admin.php`: Controlador principal del panel.
+- `/app/Views/admin/`: Vistas del panel de administración.
+- `/app/Views/component/`: Header y Footer reutilizables.
+- `/public/uploads/`: Carpeta donde se guardan las imágenes.
+- `/app/Models/PostModel.php`: Modelo de datos de los posts.
 
-### 2. Clona tu Fork en tu computadora
+## 🔐 Acceso al panel
 
-```bash
-git clone https://github.com/tu-usuario/el-nombre-de-tu-fork.git
-cd el-nombre-de-tu-fork
+Para entrar al panel, debes iniciar sesión con:
+
 ```
----
+Usuario: admin
+Contraseña: admin
+```
 
-### 3. Subir cambios al repositorio principal
+## 📝 Funcionalidades
 
-Ve a la pestaña de **[Pull requests]**, da click en 'Create pull request' y de nueva cuenta da click en 'Create pull request'.
+- Crear, editar y eliminar posts
+- Subida de imágenes
+- Panel visual con Tailwind CSS
+- Modal de confirmación al eliminar
+- Validación de sesión (login sencillo)
 
+## 📦 Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone <URL-del-repo>
+   ```
+
+2. Copia el contenido de `blog002` dentro de la carpeta del repositorio clonado.
+
+3. Asegúrate de tener configurado tu entorno (`.env`) en modo desarrollo:
+   ```
+   CI_ENVIRONMENT = development
+   ```
+
+4. Inicia el servidor de desarrollo de CodeIgniter:
+   ```bash
+   php spark serve
+   ```
+
+5. Visita `http://localhost:8080`.
+
+## 📌 Notas
+
+- Las imágenes se almacenan en `/public/uploads/`
+- Al actualizar o eliminar un post, también se elimina su imagen asociada
+- No es necesario subir la carpeta `vendor` al repo (usa `.gitignore`)

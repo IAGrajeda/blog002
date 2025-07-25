@@ -1,0 +1,16 @@
+{
+    "folder-color.pathColors": [
+        {
+            "folderPath": "blog002\\app\\Models\\",
+            "badge": "🧍"
+        },
+        {
+            "folderPath": "blog002\\app\\Config\\Routes.php\\",
+            "badge": "↪️"
+        },
+        {
+            "folderPath": "blog002\\app\\Views\\",
+            "badge": "👁️‍🗨️"
+        }
+    ]
+}
